@@ -8,6 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href").replace("#", "");
+    const section = document.getElementById(targetId);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  });
+});
+
 document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
   link.addEventListener('click', () => {
     const navbarCollapse = document.querySelector('.navbar-collapse');

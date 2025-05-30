@@ -1,0 +1,107 @@
+body {
+  height: 1230px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #120032;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+ul {
+  margin-left: auto;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  margin-top: 5rem;
+}
+
+.intro .textintro {
+  margin-left: 10rem;
+}
+
+.intro .profile-img-intro {
+  margin: auto;
+}
+
+.intro .profile-img-intro img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+}
+
+#about,
+#skills,
+#contact {
+  padding: 40px;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.flex-about {
+  margin-top: 3rem;
+  display: flex;
+}
+
+.profile-img-about {
+  margin: auto;
+}
+
+.profile-img-about img {
+  width: 400px;
+  height: 300px;
+  border-radius: 15%;
+}
+
+.about-box {
+  margin: auto;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+}
+
+#skills {
+  padding-right: 200px;
+  padding-left: 200px;
+}
+#skill {
+  margin-bottom: 1.2rem;
+  background-color: #1e0047;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #6a0dad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e0047;
+}

@@ -16,13 +16,15 @@ ul {
 
 .intro {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   margin-top: 5rem;
+  text-align: center;
 }
 
 .intro .textintro {
-  margin-left: 10rem;
+  margin-left: 0; 
 }
 
 .intro .profile-img-intro {
@@ -46,6 +48,9 @@ ul {
 .flex-about {
   margin-top: 3rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .profile-img-about {
@@ -104,4 +109,27 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #1e0047;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .flex-about {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  #skills {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  form {
+    flex-direction: column;
+  }
 }
